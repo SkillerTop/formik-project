@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import CommentForm from './components/CommentForm';
+import LoginForm from './components/LoginForm';
+import ProductForm from './components/ProductForm';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <h1>React Formik Project</h1>
+
+            <div>
+                <h2>Додавання коментарів</h2>
+                <CommentForm />
+            </div>
+
+            <div>
+                <h2>Авторизація</h2>
+                <LoginForm />
+            </div>
+
+            <div>
+                <h2>Додавання товарів</h2>
+                <ProductForm />
+            </div>
+        </div>
+    );
 }
 
 export default App;
